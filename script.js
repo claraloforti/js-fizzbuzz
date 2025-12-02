@@ -6,11 +6,12 @@
 
 
 // SETUP
+// Dichiaro listaNumeri attribuendo che dovrà vedersi in pagina
+// Creo contenutoLista
 let listaNumeri = document.getElementById("lista");
 let contenutoLista = '';
 
 // ELABORAZIONE
-
 // Stampo i numeri da 1 a 100 col ciclo FOR
 for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) { // se il numero è multiplo sia di 3 che di 5 stampo FizzBuzz
@@ -23,10 +24,11 @@ for (let i = 1; i <= 100; i++) {
     else if (i % 5 === 0) { // se il numero è multiplo di 5 stampo Buzz
         contenutoLista += `<li class="text-danger">Buzz</li>`;
     }
-    else {
+    else { // altrimenti stampo il numero
         contenutoLista += `<li class="text-success"> ${i} </li>`;
     }
 }
 
 // OUTPUT
+// Aggiungo al contenuto HTML della lista tutti i li che ho creato
 listaNumeri.innerHTML = contenutoLista;

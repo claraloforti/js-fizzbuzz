@@ -22,7 +22,7 @@ for (let i = 1; i <= 100; i++) {
         contenutoLista += `<li class="text-danger">Buzz</li>`;
     } else { // altrimenti stampo il numero
         contenutoLista += `<li class="text-success"> ${i} </li>`;
-    }
+    } 
 }
 
 // OUTPUT
